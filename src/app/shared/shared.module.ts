@@ -27,7 +27,11 @@ import { HeaderComponent } from './components/header/header.component';
     DiscountPipe,
     NavComponent,
     FooterComponent,
-    CarouselComponent
+    CarouselComponent,
+    LogoComponent,
+    RegisterComponent,
+    LoginComponent,
+    HeaderComponent
   ]
 })
 export class SharedModule { }
