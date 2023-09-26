@@ -1,4 +1,7 @@
 ::ng-deep .blueBackground {
     background-color: red;
 }
+::ng-deep .custom-nav-item{
+    color: white;
+}
 
