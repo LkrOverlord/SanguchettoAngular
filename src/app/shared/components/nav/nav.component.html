@@ -1,58 +1,69 @@
 <nav class="navbar navbar-expand-lg navbar-dark custom-nav">
-    
-    <div class="div container-fluid">
-      <div class="row w-100 justify-content-center text-center align-items-center">
-        <div class="col-lg-3 col-md-3 col-3 ">
 
-          <!-- Se agrega el componente logo dentro del nav -->
-          <a class="navbar-brand" href="#">
-            <app-logo></app-logo>
-          </a>
-          <!-- Fin Componente logo -->
+  <div class="container-fluid custom-nav-container">
+    <div class="row w-100 justify-content-end text-center align-items-center">
+      <div class="col-lg-2 col-md-1 col-1 d-flex justify-content-start">
 
-        </div>
-     
-      <div class="col-lg-6 col-md-6 col-6">
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <!-- Se agrega el componente logo dentro del nav -->
+        <a class="navbar-brand" href="#">
+          <app-logo></app-logo>
+        </a>
+        <!-- Fin Componente logo -->
+
+      </div>
+
+      <div class="col-lg-7 col-md-4 col-2">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse">
+        <div class="collapse navbar-collapse d-flex justify-content-center">
           <ul class="navbar-nav">
             <li class="nav-item active">
               <a class="nav-link custom-nav-item" href="/">BIENVENIDOS</a>
             </li>
-    
+
             <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle custom-nav-item" data-bs-toggle="dropdown" 
-              href="#" role="button" aria-expanded="false">PRODUCTOS</a>
+              <a class="nav-link dropdown-toggle custom-nav-item" data-bs-toggle="dropdown" href="#" role="button"
+                aria-expanded="false">PRODUCTOS</a>
               <ul class="dropdown-menu">
-                <li><a class="dropdown-item custom-nav-item" href="#">Promos</a></li>
-                <li><a class="dropdown-item custom-nav-item" href="#">Bandejas</a></li>
-                <li><hr class="dropdown-divider"></li>
-                <li><a class="dropdown-item custom-nav-item" href="#">Simples y triples</a></li>
+                <li><a class="dropdown-item" href="#">Promos</a></li>
+                <li><a class="dropdown-item" href="#">Bandejas</a></li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+                <li><a class="dropdown-item" href="#">Simples y triples</a></li>
               </ul>
             </li>
-            
+
             <li class="nav-item">
               <a class="nav-link custom-nav-item" href="/acerca">LUNCH & CATERING</a>
             </li>
-    
+
             <li class="nav-item">
               <a class="nav-link custom-nav-item" href="/acerca">EMPRESA</a>
             </li>
-    
+
             <li class="nav-item">
               <a class="nav-link custom-nav-item" href="/acerca">ENVÍOS</a>
             </li>
-    
+
             <li class="nav-item">
               <a class="nav-link custom-nav-item" href="/acerca">CONTACTO</a>
             </li>
           </ul>
         </div>
+
       </div>
+
+      <!-- Componentes de autenticación -->
+      <div class="col-lg-3 col-md-7 col-9 d-flex justify-content-end">
+        <app-login></app-login>
+        <app-register></app-register>
       </div>
     </div>
-    
-  </nav>
-  
+
+
+
+  </div>
+</nav>

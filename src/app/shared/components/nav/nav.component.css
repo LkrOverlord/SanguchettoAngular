@@ -5,3 +5,12 @@
 .custom-nav-item{
     color: white;
 }
+.custom-nav-container .row {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.custom-nav-container .row [class^='col-'] {
+    padding-left: 0;
+    padding-right: 0;
+}
